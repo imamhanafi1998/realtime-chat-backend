@@ -20,6 +20,13 @@ const Message = require('../models/message')
 // const reportRouter = require('../routers/report')
 // const userSavedPostRouter = require('../routers/userSavedPost')
 
+io.on('connection', (socket) => {
+    console.log(`⚡: ${socket.id} user just connected!`);
+    socket.on('disconnect', () => {
+      console.log('🔥: A user disconnected');
+    });
+});
+
 router.get('/messages', async (req, res) => {	
 	Message.find({}, (err, messages) => {
         res.send(messages);
