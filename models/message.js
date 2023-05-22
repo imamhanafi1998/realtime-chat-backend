@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
-const Report = require('./report')
 
 const messageSchema = new mongoose.Schema(
   {
