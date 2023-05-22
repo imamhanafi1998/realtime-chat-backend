@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imamhanafi1998/sidik-backend.git"
+    "url": "git+https://github.com/imamhanafi1998/realtime-chat-backend.git"
   },
   "keywords": [
     "expressjs",
@@ -20,9 +20,9 @@
   "author": "Imam Hanafi <h.imam1998@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/imamhanafi1998/sidik-backend/issues"
+    "url": "https://github.com/imamhanafi1998/realtime-chat-backend/issues"
   },
-  "homepage": "https://github.com/imamhanafi1998/sidik-backend#readme",
+  "homepage": "https://github.com/imamhanafi1998/realtime-chat-backend",
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
