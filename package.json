@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+    "start": "cross-env netlify-lambda serve src",
+    "build": "cross-env netlify-lambda build src"
   },
   "repository": {
     "type": "git",
@@ -28,13 +28,18 @@
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "http": "^0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.2",
     "mongoose-unique-validator": "^2.0.3",
     "multer": "^1.4.2",
-    "netlify-lambda": "^2.0.3",
+    "netlify-lambda": "^2.0.16",
     "rand-token": "^1.0.1",
     "serverless-http": "^2.7.0",
+    "socket.io": "^4.6.1",
     "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

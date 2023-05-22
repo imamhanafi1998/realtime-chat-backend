@@ -6,6 +6,12 @@ const app = express()
 const router = express.Router()
 const port = 3000
 
+// http
+const http = require('http').Server(app)
+
+// socket.io
+const io = require('socket.io')(http)
+
 const Message = require('../models/message')
 
 // const userRouter = require('../routers/user')
@@ -28,7 +34,7 @@ router.post('/messages', async (req, res) => {
             console.log("gagal")
             sendStatus(500);
         }
-        // io.emit('message', req.body)
+        io.emit('message', req.body)
         res.sendStatus(200);
     })
 })
