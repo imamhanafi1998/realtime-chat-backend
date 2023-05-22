@@ -76,7 +76,7 @@ io.on('connection', (socket) => {
     });
 });
 
-app.get("/api", (req, res) => {
+router.get("/api", (req, res) => {
   res.json({message: "Hello"})
 });
 
